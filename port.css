@@ -11,7 +11,9 @@ clear: both;
 
 
 nav{
-    float: right;
+    /* float: right; */
+    display: flex;
+    justify-content: space-between;
 }
 
 nav ul{
@@ -37,20 +39,27 @@ nav a {
 
 nav a:hover {
 color: black;
+text-decoration: none;
 }
 
 body{
     background-image: url("./assets/photo-1507525428034-b723cf961d3e.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat;
+    background-size: contain;
     background-color: rgba(99, 96, 93, 0.5);
     background-blend-mode: multiply;
+    margin: 0;
+}
+
+.home{
+    height: 50vh;
+    box-sizing: border-box;
 }
 
 .name{
     display: flex;
     justify-content: center;
-    margin-top: 240px;
+    margin-top: 340px;
     color: #2dbd8d;
     text-shadow: 4px 4px rgb(41, 40, 40);
     font-family: Arial, Helvetica, sans-serif;
@@ -65,13 +74,54 @@ body{
    font-family: Arial, Helvetica, sans-serif;
 }
 
-.about{
-    display: flex;
-    background-color: teal;
-    height: 
+.next{
+    background-color: cornflowerblue;
+    color: white;
+    height: 50vh;  
 }
 
-.para{
-    display: flex;
-    background-color: teal;
+
+#contactHeaderUnderline{
+    width: 22rem;
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 2px solid #688aa5;
+    margin: 2em auto;
+    padding: 0;
+    justify-content: center;
+    margin-top: 0em;
 }
+
+.container2{
+    display: flex;
+    margin-top: 550px;
+   justify-content: center;
+}
+
+.my-4{
+    display: flex;
+    justify-content: center;
+    color: rgb(158, 47, 66);
+}
+
+.resume{
+    float: right;
+}
+
+.social-menu {
+    position: absolute;
+    left: 50%;
+    padding: 0;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    
+}
+
+.container4{
+    display: flex;
+    justify-content: center;
+}
+
+
+

@@ -4,37 +4,170 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kayla's Portfolio</title>
-    <link href="port.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <a href="https://icons8.com/icon/12599/github"></a>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link rel="stylesheet" href="port.css">
+    </head>
 <body>
     <header>
+        <!-- <script src="https://use.fontawesome.com/811e6466e8.js"></script> -->
         <div class="container">
-          
-            <nav>
+         <nav>
+             <button class="navbar-toggler" data-toggle="collapse" data-target="Navbar">
+             <span class="navbar-toggler-icon"></span>
+             </button>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Contact Me</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contactMe">Contact Me</a></li>
+                    
                 </ul>
             </nav>
         </div>
     </header>
-   <section>
+   <section class="home">
     <div class="background">
      
     <h1 class ="name">KAYLA BULLARD</h1>
     
     <h2 class="junior">JUNIOR WEB DEVELOPER</h2>
     </div>
-    </section>
-        
-        <h1 class="about">About Me</h1>
-            <p class="para">
-                Hello, my name is Kayla Bullard. I am a student at Eleven Fifty Academy.
-            </p>
-        
+   </section>
+        <section class="next">
+            <div id="about">
+                <div class="card mb-4" style="max-width: 2000px; height: 602px; background-color: cornflowerblue; color: white; font-family: Arial, Helvetica, sans-serif;">
+                    <div class="row no-gutters">
+                      <div class="col-md-4">
+                        <img src="../Kaylas-Portfolio/assets/unnamed.jpg" class="img-thumbnail my-2 mx-1 d-none d-lg-block" alt="..." style="width: 500px; height: 30; border: solid 3px rgb(104, 104, 221);">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                            <div data-spy="scroll" data-target="#card-text" data-offset="0" class="scrollspy-example">
+                          <h5 class="card-title display-3 text-muted">About me</h5>
+                          <p class="card-text" style="font-size: x-large; width:1000px; height:300px; line-height:3em;overflow:auto; padding:5px;">Hello my name is Kayla Bullard. I am a student at Eleven Fifty Academy training to be a web developer I have wanted to be in this program for a year and a half and I am excited to be learning. I have learned so much already and I can't wait to see the growth as I proceed in the class. I am an aspiring website designer. That would be my dream job. Feel free to contact me.</p>
+                          <!-- <p class="card-text"><small class="text-muted"></small></p> -->
+                        
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>   
+    </div>
+</div>
+        </section> 
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+                <section class="after">
+                <div id="projects">
+                    <div class="card mb-4" style="max-width: 2000px; height: 500px; background-color: cornflowerblue;">
+                        <ul class="list-group">
+                           
+                            <div class="thumbnail">
+                                <!-- <a href="https://codepen.io/kayla-jobe/pen/XWmogoz" target="blank">
+                                    <img src="../Kaylas-Portfolio/assets/Screenshot (10).png"> -->
+                                    
+                                    <li class="list-group-item list-group-item-info display-2" style="height: 200px; text-align: center; color:rgb(136, 41, 81); font-family: 'Courier New', Courier, monospace;">Projects</li>
+                                    </div>  
+                            <li class="list-group-item list-group-item-warning" style="height:250px; font-size: xx-large; color: rgb(4, 201, 201)">
+                                <a href="https://codepen.io/kayla-jobe/pen/XWmogoz" target="blank">
+                                <img src="../Kaylas-Portfolio/assets/Screenshot (10).png" style="width: 190px; height: 190px; float: right; border: solid 2px rgb(221, 92, 113); border-radius: 20%;"></a>CSS Creature</li>
+                            </a>
+                        
+                            
+                            
+                            <li class="list-group-item list-group-item-danger" style="height: 250px;  font-size: xx-large; color:rgb(64, 110, 194);">
+                                <a href="https://kjobe92.github.io/staticLayout-efaGold/" target="blank">
+                                <img src="../Kaylas-Portfolio/assets/Screenshot (13).png" style="width: 200px; height: 190px; float: right; border: solid 2px rgb(223, 208, 10); border-radius: 20%;"></a>Static Layout</li>
+                            
+                            
+                            <li class="list-group-item list-group-item-success" style="height: 250px; text-align: right; font-size: xx-large; color: rgb(126, 63, 207);">
+                                <a href="https://klb-potter.web.app" target="blank">
+                                <img src="../Kaylas-Portfolio/assets/Screenshot (17).png" style="width: 200px; height: 190px; float: left; border: solid 2px rgb(14, 10, 223); border-radius: 20%;"></a>API Challenge</li>
+                            
+                            
+                            <li class="list-group-item list-group-item-dark" style="height:250px; text-align: right; font-size: xx-large; color: rgb(5, 4, 65);">
+                                <a href="https://elevenfifty.instructure.com/courses/214/assignments/3633" target="blank">
+                                <img src="../Kaylas-Portfolio/assets/Screenshot (14).png" style="width: 200px; height: 190px; float: left; border: solid 2px rgb(53, 6, 50); border-radius: 20%;"></a>White Board Challenges</li>
+                            
+                          </ul>
+                    </div>
+                    </div>
+                
+                </div>    
+                </section>
+            </div>
+            
 
+    </div>
+    <br>
+    <br>
+    <div class="container2">
+        <div id="contactMe">
+            <form action="https://formspree.io/xnqgbqww" method="POST">
+            <div class="container mb-2" style="width: 900px;">
+                <span class="bg-dark text-white mt-3">Contact Me</span> <hr class="bg-dark">
+                <div class="row">
+                    <div class="col">
+                        <div class="card bg-white">
+                            <div class="card-header">
+                                <h4 class="my-4" style=" display: flex; justify-content: center; color: rgb(158, 47, 66);">Contact Me</h4>
+                                <div class="form-group">
+                                    <input type="text" placeholder="Name" name=" Full Name " class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" placeholder="Email" name="_replyto" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Message" name="Message...."></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <button class="btn btn-success text-white">Submit</button>
+                                </div>
+                                <div class="resume">
+                                <a href="https://docs.google.com/document/d/1nok4Ku5dH6Dp9TNs3HZMU6_iTCd9uGgA6euOAB5Osvo/edit" target="blank">
+                                    <img src="https://img.icons8.com/ultraviolet/40/000000/open-resume.png"/></a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            </div>
+            </div>
+        </div>
+        <br>
+        
+        <div class="social-menu mb-5">
+            
+                <div class="d-flex p-2 bd-highlight" style="color: white;">
+                    
+                    <a href="https://github.com/" target="blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/github.png"/></a>
+
+                        <a href="https://www.facebook.com/kayla.jobe.7/" target="blank">
+                            <img src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png"/></a>
+
+                            <a href="https://www.linkedin.com/in/kayla-bullard-440050160/" target="blank">
+                                <img src="https://img.icons8.com/ios-filled/50/000000/linkedin-circled.png"/></a>
+                </div>
+           </div> 
+        </div>
+        </div>     
+    </div>
+    <br>
+    <br>
+    <div class="container4">
+    <footer id="theEnd">
+        <p>Copyright © 2020 - Kayla Bullard</p>
+    </footer>
     </div>
 </body>
 </html>
