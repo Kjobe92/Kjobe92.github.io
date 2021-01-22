@@ -1,5 +1,5 @@
-header{
-    background: #55d6aa;
+.fixed-top{
+    background: #55d6aa;   
 }
 
 
@@ -44,22 +44,23 @@ text-decoration: none;
 
 body{
     background-image: url("./assets/beach.png");
-    background-repeat: repeat;
-    background-size: contain;
+    /* background-repeat: repeat; */
+    background-size:contain;
     background-color: rgba(99, 96, 93, 0.5);
     background-blend-mode: multiply;
     margin: 0;
+    overflow-x: hidden; 
 }
 
-.home{
-    height: 50vh;
+#home{
+    height: 80vh;
     box-sizing: border-box;
 }
 
 .name{
     display: flex;
     justify-content: center;
-    margin-top: 340px;
+    margin-top: 400px;
     color: #2dbd8d;
     text-shadow: 4px 4px rgb(41, 40, 40);
     font-family: Arial, Helvetica, sans-serif;
@@ -79,6 +80,8 @@ body{
     color: white;
     height: 50vh;  
 } */
+
+
 
 
 #contactHeaderUnderline{
@@ -139,4 +142,10 @@ body{
   .card-deck:hover .overlay {
     opacity: 1;
   }
+
+.pIcons {
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 100px;
+}
 

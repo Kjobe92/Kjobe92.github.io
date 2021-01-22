@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="port.css">
     </head>
 <body>
-    <header>
+    <header class='fixed-top'>
         
         <div class="container">
          <nav>
@@ -27,7 +27,7 @@
             </nav>
         </div>
     </header>
-   <section class="home">
+   <section id="home">
     <div class="background">
   <!-- <img src='assets/KPic.png' style='height: 200px; width: 150px; margin-left: 40px; margin-bottom: 20px; justify-content: space-between;'> -->
 
@@ -39,16 +39,20 @@
    </section>
         <!-- <section class="next"> -->
             <div id="about">
-                <div class="jumbotron jumbotron-fluid" style='background-color: cornflowerblue; color: whitesmoke;'>
+                <div class="jumbotron jumbotron-fluid" style='background-color: cornflowerblue; color: whitesmoke; height: 600px;'>
                     <!-- <img src='assets/KPic.png' style='height: 200px; width: 150px; margin-left: 40px; margin-bottom: 20px;'> -->
                     <div class="container">
-                        <!-- <img src='assets/KPic.png' style='height: 200px; width: 150px; margin-left: 40px; margin-bottom: 20px; justify-content: space-between;'> -->
+                      <div style='width: 50%; height: 50px; float: left;'>
+                        <img src='assets/KPic.png' style='height: 400px; width: 300px; margin-right: 200px; margin-top: 40px; border: 3px solid black; border-radius: 20%;'> 
+                      </div>
+                      <div style='margin-left: 50%; height: 100px;'>
                       <h1 class="display-4">About Me</h1>
                       <p class="lead">Hello! My name is Kayla Bullard. I am a recent grad from Eleven-Fifty Academy. The program that I went through is a 6 month immersive learning program for Web Development taught with industry-guided curriculum, real-world project based learning, and 500+ hours of logged coding time and training. I am now working as a learning assistant for Eleven-Fifty. I am looking for a job that will challenge me and somewhere that I can grow as a web developer. Feel free to contact me! 
                     </p>
+                  </div>
                     </div>
                   </div>
-                        </div>
+                      </div>
                       </div>
                     </div>
                   </div>   
@@ -60,43 +64,37 @@
         <br>
         <br>
         <br>
-         <div id=projects>
-            <div class='card-deck'>
-        <div class="api" style="width: 18rem; margin-left: 50px; background: #55d6aa; color: black">
-            <img src="assets/hp.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Harry Potter API</h5>
-              <p class="card-text">Using DOM Manipulation I was able to obtain all of the information needed for a Harry Potter Wiki page.</p>
-              <a href="https://klb-potter.web.app/" style='margin-top: 55px' class="btn btn-primary">Click to View</a>
-            </div>
-          </div>
-          <div class="char" style="width: 18rem; margin-left: 50px; background: #55d6aa; color: black">
-            <img style='height: 305px' src="assets/image.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">CSS Character</h5>
-              <p class="card-text">Using Codepen, HTML, and CSS I created Rick Sanchez.</p>
-              <a href="https://codepen.io/kayla-jobe/pen/XWmogoz"  style='margin-top: 110px' class="btn btn-primary">Click to View</a>
-            </div>
-          </div>
-          <div class="recipeApp" style="width: 18rem; margin-left: 50px; background: #55d6aa; color: black">
-            <img style='height: 305px' src="assets/recipe.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Delicious Memories</h5>
-              <p class="card-text">Using React, Node, and PGAdmin I created my very first application.</p>
-              <a href="https://deliciousmemories-client.herokuapp.com/" style='margin-top: 110px' class="btn btn-primary">Click to View</a>
-            </div>
-          </div>
-          <div class="musicApp" style="width: 18rem; margin-left: 50px; background: #55d6aa; color: black">
-            <img style='height: 305px' src="assets/Music.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">TheRedVinyl</h5>
-              <p class="card-text">Using React, Node, PG Admin, TypeScript, Class Components, and Material UI. My two partners and I created this music app.</p>
-              <a href="http://theredvinyl.herokuapp.com/" style='margin-top: 55px' class="btn btn-primary">Click to View</a>
-            </div>
-          </div>
-            </div>
-         </div>
-
+        <div id="projects">
+        <div class="jumbotron jumbotron-fluid" style='background-color:cadetblue; color: whitesmoke; height: 700px;'>
+          <h1 style=' text-align: center ; font-family: cursive;'> My Projects!</h1>
+      
+          <h2 style='text-align: center; font-family:fantasy;'>Click on an Icon!!</h2>
+      
+         <h3 style='text-align: center; margin-left: 50px; margin-right: 50px; font-size: small;'> Using DOM manipulation, HTML5, CSS, React, Reactstrap, Node, PGAdmin, TypeScript, Class Components, Material UI, ect. I have created all of these projects through Eleven-fifty and have updated some of them since. I am currently working on my first fullstack application outside of school.</h3>
+          <br>
+          <div class='pIcons'>
+            
+          <a href="https://codepen.io/kayla-jobe/pen/XWmogoz" target="blank">
+            <img src="https://img.icons8.com/ios/100/000000/rick-sanchez.png"/></a> 
+           
+            <a href="https://klb-potter.web.app/" target="blank">
+            <img src="https://img.icons8.com/ios/100/000000/gandalf.png" /></a> 
+           
+            <a href="https://deliciousmemories-client.herokuapp.com/" target="blank">
+        <img src="https://img.icons8.com/ios-filled/100/000000/love-book.png" /></a>
+        <a href="http://theredvinyl.herokuapp.com/" target="blank">
+      <img src="https://img.icons8.com/ios-filled/50/000000/music-record.png" style='height: 100px;'/></a>
+    </div>
+    <!-- <div class='pPara'>
+      <p>Using HTML and CSS I created a creature</p>
+      <p>Using DOM Manipulation I was able to obtain all of the information needed for a 	Lord of the Rings Wiki page. Also I utilized HTML5, CSS, and Bootstrap.
+      </p>
+      <p>Using React, ReactStrap, Node, and PGAdmin I created my first fullstack	application. </p>
+      <p>Using React, Node, PG Admin, TypeScript, Class Components, and Material UI. 	My two partners and I created this fullstack music application.
+      </p>
+    </div> -->
+      </div>
+    </div>
     <!-- <div class="container2"> -->
         <div id="contactMe" style='margin-top: 150px'>
             <form action="https://formspree.io/xnqgbqww" method="POST">
@@ -124,7 +122,7 @@
                                 </div>
                                 <div class="resume">
                                 <a href="https://docs.google.com/document/d/1vRwFZs2uJGavNtsNjXCkXOxGftqoKH-Ej_Cf7Maqlj0/edit" target="blank">
-                                    <img src="https://img.icons8.com/ultraviolet/40/000000/open-resume.png"/></a>
+                                    <img src="https://img.icons8.com/ultraviolet/40/000000/open-resume.png" style='background-color: darkblue;'/></a>
                                     </div>
                             </div>
                         </div>
